@@ -1,0 +1,1130 @@
+2025-03-29 13:58:08,196 - INFO - CSV file uploaded successfully.
+2025-03-30 20:10:28,087 - INFO - CSV file uploaded successfully.
+2025-03-30 20:10:41,890 - INFO - CSV file uploaded successfully.
+2025-03-30 20:10:41,987 - INFO - CSV file uploaded successfully.
+2025-03-30 20:10:41,987 - INFO - User Prompt: Generate python code for How many ballers took more than 3 wickets in 2022
+2025-03-30 20:10:41,999 - INFO - Dataset info retrieved: {'columns': ['Year', 'Player_Name', 'Matches_Batted', 'Not_Outs', 'Runs_Scored', 'Highest_Score', 'Batting_Average', 'Balls_Faced', 'Batting_Strike_Rate', 'Centuries', 'Half_Centuries', 'Fours', 'Sixes', 'Catches_Taken', 'Stumpings', 'Matches_Bowled', 'Balls_Bowled', 'Runs_Conceded', 'Wickets_Taken', 'Best_Bowling_Match', 'Bowling_Average', 'Economy_Rate', 'Bowling_Strike_Rate', 'Four_Wicket_Hauls', 'Five_Wicket_Hauls'], 'num_rows': 1008, 'num_columns': 25, 'sample_data': {'Year': {0: nan, 1: 2024.0, 2: 2023.0}, 'Player_Name': {0: 'Aaron Hardie', 1: 'Abdul Samad', 2: 'Abdul Samad'}, 'Matches_Batted': {0: 'No stats', 1: '16', 2: '9'}, 'Not_Outs': {0: 'No stats', 1: '2', 2: '4'}, 'Runs_Scored': {0: 'No stats', 1: '182', 2: '169'}, 'Highest_Score': {0: 'No stats', 1: '37*', 2: '37*'}, 'Batting_Average': {0: 'No stats', 1: '18.2', 2: '42.25'}, 'Balls_Faced': {0: 'No stats', 1: '108', 2: '128'}, 'Batting_Strike_Rate': {0: 'No stats', 1: '168.52', 2: '132.03'}, 'Centuries': {0: 'No stats', 1: '0', 2: '0'}, 'Half_Centuries': {0: 'No stats', 1: '0', 2: '0'}, 'Fours': {0: 'No stats', 1: '15', 2: '10'}, 'Sixes': {0: 'No stats', 1: '11', 2: '11'}, 'Catches_Taken': {0: 'No stats', 1: '9', 2: '4'}, 'Stumpings': {0: 'No stats', 1: '0', 2: '0'}, 'Matches_Bowled': {0: 'No stats', 1: '16', 2: '9'}, 'Balls_Bowled': {0: 'No stats', 1: '0', 2: '0'}, 'Runs_Conceded': {0: 'No stats', 1: '0', 2: '0'}, 'Wickets_Taken': {0: 'No stats', 1: '0', 2: '0'}, 'Best_Bowling_Match': {0: 'No stats', 1: '0', 2: '0'}, 'Bowling_Average': {0: 'No stats', 1: '0', 2: '0'}, 'Economy_Rate': {0: 'No stats', 1: '0', 2: '0'}, 'Bowling_Strike_Rate': {0: 'No stats', 1: '0', 2: '0'}, 'Four_Wicket_Hauls': {0: 'No stats', 1: '0', 2: '0'}, 'Five_Wicket_Hauls': {0: 'No stats', 1: '0', 2: '0'}}}
+2025-03-30 20:10:56,412 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 20:10:56,414 - INFO - Code generated successfully.
+2025-03-30 20:10:56,414 - INFO - Extracted Python code successfully.
+2025-03-30 20:10:56,415 - INFO - Chat history updated.
+2025-03-30 20:10:56,418 - INFO - Code written to generated_script.py.
+2025-03-30 20:10:57,044 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 7, in <module>
+    numWicketTakers = filtered_data.loc[(filtered_data["Five_Wicket_Hauls"] > 3) & (filtered_data['Year']==2022), "Player_Name"].count()  # Filters for players who took more than three wickets in 'year' equal to two zeroes
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/ops/common.py", line 72, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/arraylike.py", line 58, in __gt__
+    return self._cmp_method(other, operator.gt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/series.py", line 6243, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 287, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 75, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/ops.pyx", line 107, in pandas._libs.ops.scalar_compare
+TypeError: '>' not supported between instances of 'str' and 'int'
+
+2025-03-30 20:12:05,697 - INFO - CSV file uploaded successfully.
+2025-03-30 20:12:11,487 - INFO - CSV file uploaded successfully.
+2025-03-30 20:12:32,340 - INFO - CSV file uploaded successfully.
+2025-03-30 20:12:54,626 - INFO - CSV file uploaded successfully.
+2025-03-30 20:12:57,394 - INFO - CSV file uploaded successfully.
+2025-03-30 20:12:57,395 - INFO - User Prompt: Generate python code for How many ballers took more than 3 wickets in 2021
+2025-03-30 20:12:57,404 - INFO - Dataset info retrieved: {'columns': ['Year', 'Player_Name', 'Matches_Batted', 'Not_Outs', 'Runs_Scored', 'Highest_Score', 'Batting_Average', 'Balls_Faced', 'Batting_Strike_Rate', 'Centuries', 'Half_Centuries', 'Fours', 'Sixes', 'Catches_Taken', 'Stumpings', 'Matches_Bowled', 'Balls_Bowled', 'Runs_Conceded', 'Wickets_Taken', 'Best_Bowling_Match', 'Bowling_Average', 'Economy_Rate', 'Bowling_Strike_Rate', 'Four_Wicket_Hauls', 'Five_Wicket_Hauls'], 'num_rows': 1008, 'num_columns': 25, 'sample_data': {'Year': {0: nan, 1: 2024.0, 2: 2023.0}, 'Player_Name': {0: 'Aaron Hardie', 1: 'Abdul Samad', 2: 'Abdul Samad'}, 'Matches_Batted': {0: 'No stats', 1: '16', 2: '9'}, 'Not_Outs': {0: 'No stats', 1: '2', 2: '4'}, 'Runs_Scored': {0: 'No stats', 1: '182', 2: '169'}, 'Highest_Score': {0: 'No stats', 1: '37*', 2: '37*'}, 'Batting_Average': {0: 'No stats', 1: '18.2', 2: '42.25'}, 'Balls_Faced': {0: 'No stats', 1: '108', 2: '128'}, 'Batting_Strike_Rate': {0: 'No stats', 1: '168.52', 2: '132.03'}, 'Centuries': {0: 'No stats', 1: '0', 2: '0'}, 'Half_Centuries': {0: 'No stats', 1: '0', 2: '0'}, 'Fours': {0: 'No stats', 1: '15', 2: '10'}, 'Sixes': {0: 'No stats', 1: '11', 2: '11'}, 'Catches_Taken': {0: 'No stats', 1: '9', 2: '4'}, 'Stumpings': {0: 'No stats', 1: '0', 2: '0'}, 'Matches_Bowled': {0: 'No stats', 1: '16', 2: '9'}, 'Balls_Bowled': {0: 'No stats', 1: '0', 2: '0'}, 'Runs_Conceded': {0: 'No stats', 1: '0', 2: '0'}, 'Wickets_Taken': {0: 'No stats', 1: '0', 2: '0'}, 'Best_Bowling_Match': {0: 'No stats', 1: '0', 2: '0'}, 'Bowling_Average': {0: 'No stats', 1: '0', 2: '0'}, 'Economy_Rate': {0: 'No stats', 1: '0', 2: '0'}, 'Bowling_Strike_Rate': {0: 'No stats', 1: '0', 2: '0'}, 'Four_Wicket_Hauls': {0: 'No stats', 1: '0', 2: '0'}, 'Five_Wicket_Hauls': {0: 'No stats', 1: '0', 2: '0'}}}
+2025-03-30 20:12:57,416 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-30 20:12:57,417 - ERROR - Error generating code: model "gemini3:7b" not found, try pulling it first (status code: 404)
+2025-03-30 20:12:57,417 - INFO - Chat history updated.
+2025-03-30 20:12:57,418 - INFO - Code written to generated_script.py.
+2025-03-30 20:12:57,454 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 1
+    Error generating code: model "gemini3:7b" not found, try pulling it first (status code: 404)
+          ^^^^^^^^^^
+SyntaxError: invalid syntax
+
+2025-03-30 20:13:48,886 - INFO - CSV file uploaded successfully.
+2025-03-30 20:13:59,797 - INFO - CSV file uploaded successfully.
+2025-03-30 20:13:59,900 - INFO - CSV file uploaded successfully.
+2025-03-30 20:13:59,901 - INFO - User Prompt: Generate python code for How many ballers took more than 3 wickets in 2021
+2025-03-30 20:13:59,909 - INFO - Dataset info retrieved: {'columns': ['Year', 'Player_Name', 'Matches_Batted', 'Not_Outs', 'Runs_Scored', 'Highest_Score', 'Batting_Average', 'Balls_Faced', 'Batting_Strike_Rate', 'Centuries', 'Half_Centuries', 'Fours', 'Sixes', 'Catches_Taken', 'Stumpings', 'Matches_Bowled', 'Balls_Bowled', 'Runs_Conceded', 'Wickets_Taken', 'Best_Bowling_Match', 'Bowling_Average', 'Economy_Rate', 'Bowling_Strike_Rate', 'Four_Wicket_Hauls', 'Five_Wicket_Hauls'], 'num_rows': 1008, 'num_columns': 25, 'sample_data': {'Year': {0: nan, 1: 2024.0, 2: 2023.0}, 'Player_Name': {0: 'Aaron Hardie', 1: 'Abdul Samad', 2: 'Abdul Samad'}, 'Matches_Batted': {0: 'No stats', 1: '16', 2: '9'}, 'Not_Outs': {0: 'No stats', 1: '2', 2: '4'}, 'Runs_Scored': {0: 'No stats', 1: '182', 2: '169'}, 'Highest_Score': {0: 'No stats', 1: '37*', 2: '37*'}, 'Batting_Average': {0: 'No stats', 1: '18.2', 2: '42.25'}, 'Balls_Faced': {0: 'No stats', 1: '108', 2: '128'}, 'Batting_Strike_Rate': {0: 'No stats', 1: '168.52', 2: '132.03'}, 'Centuries': {0: 'No stats', 1: '0', 2: '0'}, 'Half_Centuries': {0: 'No stats', 1: '0', 2: '0'}, 'Fours': {0: 'No stats', 1: '15', 2: '10'}, 'Sixes': {0: 'No stats', 1: '11', 2: '11'}, 'Catches_Taken': {0: 'No stats', 1: '9', 2: '4'}, 'Stumpings': {0: 'No stats', 1: '0', 2: '0'}, 'Matches_Bowled': {0: 'No stats', 1: '16', 2: '9'}, 'Balls_Bowled': {0: 'No stats', 1: '0', 2: '0'}, 'Runs_Conceded': {0: 'No stats', 1: '0', 2: '0'}, 'Wickets_Taken': {0: 'No stats', 1: '0', 2: '0'}, 'Best_Bowling_Match': {0: 'No stats', 1: '0', 2: '0'}, 'Bowling_Average': {0: 'No stats', 1: '0', 2: '0'}, 'Economy_Rate': {0: 'No stats', 1: '0', 2: '0'}, 'Bowling_Strike_Rate': {0: 'No stats', 1: '0', 2: '0'}, 'Four_Wicket_Hauls': {0: 'No stats', 1: '0', 2: '0'}, 'Five_Wicket_Hauls': {0: 'No stats', 1: '0', 2: '0'}}}
+2025-03-30 20:14:14,934 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 20:14:14,938 - INFO - Code generated successfully.
+2025-03-30 20:14:14,938 - INFO - Extracted Python code successfully.
+2025-03-30 20:14:14,939 - INFO - Chat history updated.
+2025-03-30 20:14:14,943 - INFO - Code written to generated_script.py.
+2025-03-30 20:14:16,021 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 9, in <module>
+    df['Year'] = df['Year'].astype(int)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/generic.py", line 6240, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 448, in astype
+    return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 352, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 526, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 299, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 230, in astype_array
+    values = astype_nansafe(values, dtype, copy=copy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 140, in astype_nansafe
+    return _astype_float_to_int_nansafe(arr, dtype, copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 182, in _astype_float_to_int_nansafe
+    raise IntCastingNaNError(
+pandas.errors.IntCastingNaNError: Cannot convert non-finite values (NA or inf) to integer
+
+2025-03-30 20:20:14,959 - INFO - CSV file uploaded successfully.
+2025-03-30 20:20:29,366 - INFO - CSV file uploaded successfully.
+2025-03-30 23:21:22,098 - INFO - CSV file uploaded successfully.
+2025-03-30 23:21:22,180 - INFO - CSV file uploaded successfully.
+2025-03-30 23:21:22,180 - INFO - User Prompt: Generate python code for How many ballers took more than 5 wickets in 2023?
+2025-03-30 23:21:22,181 - ERROR - Error reading dataset: 'utf-8' codec can't decode byte 0xa2 in position 11: invalid start byte
+2025-03-30 23:21:38,056 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:21:38,059 - INFO - Code generated successfully.
+2025-03-30 23:21:38,059 - INFO - Extracted Python code successfully.
+2025-03-30 23:21:38,060 - INFO - Chat history updated.
+2025-03-30 23:21:38,065 - INFO - Code written to generated_script.py.
+2025-03-30 23:21:39,016 - INFO - Execution Output: Error reading dataset: 'utf-8' codec can't decode byte 0xa2 in position 11: invalid start byte
+Attempting to read the file with 'latin-1' encoding...
+
+2025-03-30 23:21:39,016 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 7, in <module>
+    df = pd.read_csv('uploaded_file.csv')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 547, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 636, in pandas._libs.parsers.TextReader._get_header
+  File "pandas/_libs/parsers.pyx", line 852, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1965, in pandas._libs.parsers.raise_parser_error
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa2 in position 11: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 12, in <module>
+    df = pd.read_csv('uploaded_file.csv', encoding='latin-1')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1778, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 230, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 808, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 866, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 852, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1973, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1 fields in line 12, saw 2
+
+
+2025-03-30 23:33:11,950 - INFO - CSV file uploaded successfully.
+2025-03-30 23:34:12,633 - INFO - CSV file uploaded successfully.
+2025-03-30 23:34:12,687 - INFO - CSV file uploaded successfully.
+2025-03-30 23:34:12,687 - INFO - User Prompt: Generate python code for Does people between age 20 to 30 or 30 to 40 have more diabetese cases?
+2025-03-30 23:34:12,692 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:34:53,851 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:34:53,854 - INFO - Code generated successfully.
+2025-03-30 23:34:53,855 - INFO - Extracted Python code successfully.
+2025-03-30 23:34:53,855 - INFO - Chat history updated.
+2025-03-30 23:34:53,860 - INFO - Code written to generated_script.py.
+2025-03-30 23:34:53,907 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 13
+    except UnicodeDecodeError as e:
+                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+2025-03-30 23:35:14,704 - INFO - CSV file uploaded successfully.
+2025-03-30 23:35:14,705 - INFO - User Prompt: Generate python code for Does people between age 20 to 30 or 30 to 40 have more diabetese cases?
+2025-03-30 23:35:14,715 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:35:33,698 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:35:33,701 - INFO - Code generated successfully.
+2025-03-30 23:35:33,701 - INFO - Extracted Python code successfully.
+2025-03-30 23:35:33,702 - INFO - Chat history updated.
+2025-03-30 23:35:33,706 - INFO - Code written to generated_script.py.
+2025-03-30 23:35:33,756 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 13
+    except UnicodeDecodeError as e:
+                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+2025-03-30 23:37:26,323 - INFO - CSV file uploaded successfully.
+2025-03-30 23:37:49,196 - INFO - CSV file uploaded successfully.
+2025-03-30 23:37:49,284 - INFO - CSV file uploaded successfully.
+2025-03-30 23:37:49,285 - INFO - User Prompt: Generate python code for How many people in the range 30 to 40 years have daibetese?
+2025-03-30 23:37:49,288 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:38:07,545 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:38:07,547 - INFO - Code generated successfully.
+2025-03-30 23:38:07,548 - INFO - Extracted Python code successfully.
+2025-03-30 23:38:07,548 - INFO - Chat history updated.
+2025-03-30 23:38:07,552 - INFO - Code written to generated_script.py.
+2025-03-30 23:38:07,948 - INFO - Execution Output: Number of people aged between 30 and 40 with diabetes: 82
+
+2025-03-30 23:39:21,154 - INFO - CSV file uploaded successfully.
+2025-03-30 23:39:37,702 - INFO - CSV file uploaded successfully.
+2025-03-30 23:39:37,707 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. And make a bar graph
+2025-03-30 23:39:37,716 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:39:51,267 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:39:51,270 - INFO - Code generated successfully.
+2025-03-30 23:39:51,270 - WARNING - No code block found in response.
+2025-03-30 23:39:51,271 - INFO - Chat history updated.
+2025-03-30 23:39:51,273 - INFO - Code written to generated_script.py.
+2025-03-30 23:39:51,844 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in <module>
+    plt.bar(diabetes_counts.index.left, diabetes_counts.values, width=10, edgecolor='black')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Index' object has no attribute 'left'
+
+2025-03-30 23:40:00,652 - INFO - CSV file uploaded successfully.
+2025-03-30 23:40:00,653 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. And make a bar graph
+2025-03-30 23:40:00,658 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:40:13,758 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:40:13,759 - INFO - Code generated successfully.
+2025-03-30 23:40:13,759 - WARNING - No code block found in response.
+2025-03-30 23:40:13,759 - INFO - Chat history updated.
+2025-03-30 23:40:13,762 - INFO - Code written to generated_script.py.
+2025-03-30 23:40:14,300 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in <module>
+    plt.bar(diabetes_counts.index.left, diabetes_counts.values, width=10, edgecolor='black')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Index' object has no attribute 'left'
+
+2025-03-30 23:40:39,681 - INFO - CSV file uploaded successfully.
+2025-03-30 23:40:45,989 - INFO - CSV file uploaded successfully.
+2025-03-30 23:40:45,990 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. And make a bar graph.
+
+And do not make this mistake
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in <module>
+    plt.bar(diabetes_counts.index.left, diabetes_counts.values, width=10, edgecolor='black')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Index' object has no attribute 'left'
+2025-03-30 23:40:45,997 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:41:03,008 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:41:03,010 - INFO - Code generated successfully.
+2025-03-30 23:41:03,010 - WARNING - No code block found in response.
+2025-03-30 23:41:03,010 - INFO - Chat history updated.
+2025-03-30 23:41:03,012 - INFO - Code written to generated_script.py.
+2025-03-30 23:41:03,557 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 17, in <module>
+    bin_edges = [interval.left for interval in diabetes_counts.index]
+                 ^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'left'
+
+2025-03-30 23:41:20,075 - INFO - CSV file uploaded successfully.
+2025-03-30 23:41:22,377 - INFO - CSV file uploaded successfully.
+2025-03-30 23:41:22,377 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. And make a bar graph.
+
+And do not make this mistake
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in <module>
+    plt.bar(diabetes_counts.index.left, diabetes_counts.values, width=10, edgecolor='black')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Index' object has no attribute 'left'
+
+and this 
+
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 17, in <module>
+    bin_edges = [interval.left for interval in diabetes_counts.index]
+                 ^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'left'
+2025-03-30 23:41:22,386 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:41:41,317 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:41:41,318 - INFO - Code generated successfully.
+2025-03-30 23:41:41,318 - WARNING - No code block found in response.
+2025-03-30 23:41:41,318 - INFO - Chat history updated.
+2025-03-30 23:41:41,320 - INFO - Code written to generated_script.py.
+2025-03-30 23:41:41,861 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 17, in <module>
+    bin_edges = [interval.left for interval in diabetes_counts.index]
+                 ^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'left'
+
+2025-03-30 23:42:15,639 - INFO - CSV file uploaded successfully.
+2025-03-30 23:42:18,914 - INFO - CSV file uploaded successfully.
+2025-03-30 23:42:18,914 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. And make a bar graph.
+2025-03-30 23:42:18,923 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:42:47,437 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:42:47,438 - INFO - Code generated successfully.
+2025-03-30 23:42:47,438 - WARNING - No code block found in response.
+2025-03-30 23:42:47,439 - INFO - Chat history updated.
+2025-03-30 23:42:47,441 - INFO - Code written to generated_script.py.
+2025-03-30 23:42:47,969 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 17, in <module>
+    bin_edges = [interval.left for interval in diabetes_counts.index]
+                 ^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'left'
+
+2025-03-30 23:43:05,571 - INFO - CSV file uploaded successfully.
+2025-03-30 23:43:07,838 - INFO - CSV file uploaded successfully.
+2025-03-30 23:43:07,839 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. 
+2025-03-30 23:43:07,846 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:43:27,380 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:43:27,381 - INFO - Code generated successfully.
+2025-03-30 23:43:27,381 - WARNING - No code block found in response.
+2025-03-30 23:43:27,381 - INFO - Chat history updated.
+2025-03-30 23:43:27,384 - INFO - Code written to generated_script.py.
+2025-03-30 23:43:27,712 - INFO - Execution Output: 0            0
+(0, 10]      0
+(10, 20]     0
+(20, 30]    90
+(30, 40]    76
+(40, 50]    64
+Name: AgeGroup, dtype: int64
+
+2025-03-30 23:43:46,228 - INFO - CSV file uploaded successfully.
+2025-03-30 23:43:46,286 - INFO - CSV file uploaded successfully.
+2025-03-30 23:43:46,286 - INFO - User Prompt: Generate python code for Can you compare the number of people having diabetese in age ranges 0 to 10, 10 to 20, 20 to 30, 30 to 40 and 40 to 50. can you make a plot of it too
+2025-03-30 23:43:46,288 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:44:14,713 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:44:14,714 - INFO - Code generated successfully.
+2025-03-30 23:44:14,715 - WARNING - No code block found in response.
+2025-03-30 23:44:14,715 - INFO - Chat history updated.
+2025-03-30 23:44:14,717 - INFO - Code written to generated_script.py.
+2025-03-30 23:44:15,259 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 17, in <module>
+    bin_edges = [interval.left for interval in diabetes_counts.index]
+                 ^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'left'
+
+2025-03-30 23:45:27,164 - INFO - CSV file uploaded successfully.
+2025-03-30 23:45:34,063 - INFO - CSV file uploaded successfully.
+2025-03-30 23:45:34,064 - INFO - User Prompt: Generate python code for Can you provide me the age range of 5 years in which the diabetes cases are maximum
+2025-03-30 23:45:34,070 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:45:56,788 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:45:56,790 - INFO - Code generated successfully.
+2025-03-30 23:45:56,791 - WARNING - No code block found in response.
+2025-03-30 23:45:56,791 - INFO - Chat history updated.
+2025-03-30 23:45:56,796 - INFO - Code written to generated_script.py.
+2025-03-30 23:45:57,187 - INFO - Execution Output: The age range of 5 years in which the diabetes cases are maximum is: (20, 25]
+
+2025-03-30 23:46:40,101 - INFO - CSV file uploaded successfully.
+2025-03-30 23:46:40,174 - INFO - CSV file uploaded successfully.
+2025-03-30 23:46:40,174 - INFO - User Prompt: Generate python code for Can you provide me the age range of 5 years in which the diabetes cases are maximum, and how many are there?
+Also compare it with second and third highest 5 year ranges
+
+2025-03-30 23:46:40,177 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:47:03,564 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:47:03,566 - INFO - Code generated successfully.
+2025-03-30 23:47:03,566 - WARNING - No code block found in response.
+2025-03-30 23:47:03,566 - INFO - Chat history updated.
+2025-03-30 23:47:03,568 - INFO - Code written to generated_script.py.
+2025-03-30 23:47:03,944 - INFO - Execution Output: Top Three Age Ranges with Maximum Diabetes Cases:
+(20, 25]: 45 cases
+(25, 30]: 45 cases
+(40, 45]: 44 cases
+
+2025-03-30 23:47:50,722 - INFO - CSV file uploaded successfully.
+2025-03-30 23:47:50,724 - INFO - User Prompt: Generate python code for Can you provide me the age range of 5 years in which the diabetes cases are maximum, and how many are there?
+Also compare it with second and third highest 5 year ranges
+
+2025-03-30 23:47:50,730 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:48:11,595 - INFO - CSV file uploaded successfully.
+2025-03-30 23:48:47,603 - INFO - CSV file uploaded successfully.
+2025-03-30 23:48:47,681 - INFO - CSV file uploaded successfully.
+2025-03-30 23:48:47,681 - INFO - User Prompt: Generate python code for Which age range of 10 years has maximum cases of diabetes, provide the count. Do this analysis for second and third highest age range as well.
+2025-03-30 23:48:47,684 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:49:02,640 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:49:02,641 - INFO - Code generated successfully.
+2025-03-30 23:49:02,642 - INFO - Extracted Python code successfully.
+2025-03-30 23:49:02,642 - INFO - Chat history updated.
+2025-03-30 23:49:02,644 - INFO - Code written to generated_script.py.
+2025-03-30 23:49:03,268 - INFO - Execution Output: Top 3 age groups with maximum cases of diabetes:
+0-29     396
+30-39    165
+40-49    118
+Name: AgeGroup, dtype: int64
+
+2025-03-30 23:49:03,280 - INFO - Generated plot displayed successfully.
+2025-03-30 23:50:08,847 - INFO - CSV file uploaded successfully.
+2025-03-30 23:50:08,958 - INFO - CSV file uploaded successfully.
+2025-03-30 23:50:08,959 - INFO - Previous plot deleted.
+2025-03-30 23:50:08,959 - INFO - User Prompt: Generate python code for Which age range of 20 years has maximum cases of diabetes, provide the count. Do this analysis for second and third highest age range as well.
+2025-03-30 23:50:08,962 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:50:23,827 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:50:23,828 - INFO - Code generated successfully.
+2025-03-30 23:50:23,828 - INFO - Extracted Python code successfully.
+2025-03-30 23:50:23,828 - INFO - Chat history updated.
+2025-03-30 23:50:23,830 - INFO - Code written to generated_script.py.
+2025-03-30 23:50:24,483 - INFO - Execution Output: Top 3 age groups with maximum cases of diabetes in 20-year intervals:
+20-39    561
+40-59    175
+60-79     31
+Name: AgeGroup, dtype: int64
+
+2025-03-30 23:50:24,484 - INFO - Generated plot displayed successfully.
+2025-03-30 23:53:04,819 - INFO - CSV file uploaded successfully.
+2025-03-30 23:53:39,111 - INFO - CSV file uploaded successfully.
+2025-03-30 23:53:39,173 - INFO - CSV file uploaded successfully.
+2025-03-30 23:53:39,174 - INFO - Previous plot deleted.
+2025-03-30 23:53:39,174 - INFO - User Prompt: Generate python code for What percentage of people in the range of 20-30 has diabetese?
+Do this analysis for age ranges of 30-40 and 40-50 as well
+2025-03-30 23:53:39,176 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:53:50,670 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:53:50,671 - INFO - Code generated successfully.
+2025-03-30 23:53:50,672 - INFO - Extracted Python code successfully.
+2025-03-30 23:53:50,672 - INFO - Chat history updated.
+2025-03-30 23:53:50,679 - INFO - Code written to generated_script.py.
+2025-03-30 23:53:51,228 - ERROR - Execution Error: /Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py:40: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+
+2025-03-30 23:53:51,240 - INFO - Generated plot displayed successfully.
+2025-03-30 23:56:26,480 - INFO - CSV file uploaded successfully.
+2025-03-30 23:56:54,139 - INFO - CSV file uploaded successfully.
+2025-03-30 23:56:54,211 - INFO - CSV file uploaded successfully.
+2025-03-30 23:56:54,211 - INFO - Previous plot deleted.
+2025-03-30 23:56:54,211 - INFO - User Prompt: Generate python code for Which factor is most corelated to the diabetese?
+2025-03-30 23:56:54,213 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:57:06,258 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:57:06,259 - INFO - Code generated successfully.
+2025-03-30 23:57:06,259 - INFO - Extracted Python code successfully.
+2025-03-30 23:57:06,259 - INFO - Chat history updated.
+2025-03-30 23:57:06,262 - INFO - Code written to generated_script.py.
+2025-03-30 23:57:06,981 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 26, in <module>
+    plot_correlation_matrix(df)
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in plot_correlation_matrix
+    sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap='coolwarm')
+    ^^^
+NameError: name 'sns' is not defined
+
+2025-03-30 23:57:40,747 - INFO - CSV file uploaded successfully.
+2025-03-30 23:57:40,855 - INFO - CSV file uploaded successfully.
+2025-03-30 23:57:40,855 - INFO - User Prompt: Generate python code for Which factor is most corelated to the diabetese?
+2025-03-30 23:57:40,860 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:57:47,467 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:57:47,468 - INFO - Code generated successfully.
+2025-03-30 23:57:47,468 - INFO - Extracted Python code successfully.
+2025-03-30 23:57:47,469 - INFO - Chat history updated.
+2025-03-30 23:57:47,471 - INFO - Code written to generated_script.py.
+2025-03-30 23:58:07,425 - INFO - CSV file uploaded successfully.
+2025-03-30 23:58:09,328 - INFO - CSV file uploaded successfully.
+2025-03-30 23:58:09,329 - INFO - User Prompt: Generate python code for Which factor is most corelated to the diabetese? Can you provide some visuals for understanding as well?
+2025-03-30 23:58:09,334 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:58:22,947 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:58:22,948 - INFO - Code generated successfully.
+2025-03-30 23:58:22,948 - INFO - Extracted Python code successfully.
+2025-03-30 23:58:22,949 - INFO - Chat history updated.
+2025-03-30 23:58:22,951 - INFO - Code written to generated_script.py.
+2025-03-30 23:58:24,332 - ERROR - Execution Error: /Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py:45: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+
+2025-03-30 23:58:39,096 - INFO - CSV file uploaded successfully.
+2025-03-30 23:59:04,560 - INFO - CSV file uploaded successfully.
+2025-03-30 23:59:04,654 - INFO - CSV file uploaded successfully.
+2025-03-30 23:59:04,655 - INFO - User Prompt: Generate python code for Which factor is most corelated to diabetese, explain through graphs
+2025-03-30 23:59:04,658 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-30 23:59:19,496 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-30 23:59:19,497 - INFO - Code generated successfully.
+2025-03-30 23:59:19,497 - INFO - Extracted Python code successfully.
+2025-03-30 23:59:19,497 - INFO - Chat history updated.
+2025-03-30 23:59:19,499 - INFO - Code written to generated_script.py.
+2025-03-30 23:59:20,521 - ERROR - Execution Error: /Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py:36: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+
+2025-03-30 23:59:48,256 - INFO - CSV file uploaded successfully.
+2025-03-31 00:00:37,535 - INFO - CSV file uploaded successfully.
+2025-03-31 00:00:37,608 - INFO - CSV file uploaded successfully.
+2025-03-31 00:00:37,609 - INFO - User Prompt: Generate python code for What percentage of people with no pregnancy has diabetese and what percentage of people with preganancy has diabetese
+2025-03-31 00:00:37,611 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 00:00:46,329 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 00:00:46,330 - INFO - Code generated successfully.
+2025-03-31 00:00:46,330 - INFO - Extracted Python code successfully.
+2025-03-31 00:00:46,330 - INFO - Chat history updated.
+2025-03-31 00:00:46,333 - INFO - Code written to generated_script.py.
+2025-03-31 00:09:59,851 - INFO - CSV file uploaded successfully.
+2025-03-31 00:10:30,310 - INFO - CSV file uploaded successfully.
+2025-03-31 00:10:30,390 - INFO - CSV file uploaded successfully.
+2025-03-31 00:10:30,390 - INFO - User Prompt: Generate python code for What is the percentage of diabetic people in the age of 30 to 50?
+2025-03-31 00:10:30,393 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 00:10:35,254 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 00:10:35,255 - INFO - Code generated successfully.
+2025-03-31 00:10:35,256 - INFO - Extracted Python code successfully.
+2025-03-31 00:10:35,256 - INFO - Chat history updated.
+2025-03-31 00:10:35,259 - INFO - Code written to generated_script.py.
+2025-03-31 00:10:35,963 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 5, in <module>
+    df = pd.read_csv(url)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+2025-03-31 00:12:16,347 - INFO - CSV file uploaded successfully.
+2025-03-31 00:12:16,425 - INFO - CSV file uploaded successfully.
+2025-03-31 00:12:16,425 - INFO - User Prompt: Generate python code for What is the percentage of diabetic people in the age of 30 to 50, do not make any plots?
+2025-03-31 00:12:16,427 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 00:12:18,353 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 00:12:18,354 - INFO - Code generated successfully.
+2025-03-31 00:12:18,354 - WARNING - No code block found in response.
+2025-03-31 00:12:18,355 - INFO - Chat history updated.
+2025-03-31 00:12:18,357 - INFO - Code written to generated_script.py.
+2025-03-31 00:12:19,134 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 5, in <module>
+    df = pd.read_csv(url)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+2025-03-31 00:12:51,960 - INFO - CSV file uploaded successfully.
+2025-03-31 00:13:13,181 - INFO - CSV file uploaded successfully.
+2025-03-31 00:13:13,260 - INFO - CSV file uploaded successfully.
+2025-03-31 00:13:13,261 - INFO - User Prompt: Generate python code for Which is the percentage of diabetic people in age of 30 to 40?
+2025-03-31 00:13:13,268 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 00:13:17,935 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 00:13:17,936 - INFO - Code generated successfully.
+2025-03-31 00:13:17,936 - INFO - Extracted Python code successfully.
+2025-03-31 00:13:17,936 - INFO - Chat history updated.
+2025-03-31 00:13:17,939 - INFO - Code written to generated_script.py.
+2025-03-31 00:13:18,491 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 146, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index_class_helper.pxi", line 49, in pandas._libs.index.Int64Engine._check_type
+KeyError: '1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 11, in <module>
+    diabetic_people = filtered_data['Outcome'].value_counts()['1']
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/series.py", line 981, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/series.py", line 1089, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: '1'
+
+2025-03-31 00:14:36,287 - INFO - CSV file uploaded successfully.
+2025-03-31 00:15:02,311 - INFO - CSV file uploaded successfully.
+2025-03-31 00:15:02,374 - INFO - CSV file uploaded successfully.
+2025-03-31 00:15:02,375 - INFO - User Prompt: Generate python code for What percentage of people in the range of 40 to 50 years have diabetese?
+2025-03-31 00:15:02,378 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 00:15:19,486 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 00:15:19,487 - INFO - Code generated successfully.
+2025-03-31 00:15:19,487 - INFO - Extracted Python code successfully.
+2025-03-31 00:15:19,487 - INFO - Chat history updated.
+2025-03-31 00:15:19,489 - INFO - Code written to generated_script.py.
+2025-03-31 00:15:20,136 - ERROR - Execution Error: /Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py:23: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+
+2025-03-31 00:15:20,148 - INFO - Generated plot displayed successfully.
+2025-03-31 00:18:45,725 - INFO - CSV file uploaded successfully.
+2025-03-31 00:19:20,025 - INFO - CSV file uploaded successfully.
+2025-03-31 00:19:20,085 - INFO - CSV file uploaded successfully.
+2025-03-31 00:19:20,086 - INFO - Previous plot deleted.
+2025-03-31 00:19:20,086 - INFO - User Prompt: Generate python code for Are more people in the range of 30 to 40 diabetic or 20 to 30, give me the stats
+2025-03-31 00:19:20,088 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 00:19:39,952 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 00:19:39,954 - INFO - Code generated successfully.
+2025-03-31 00:19:39,955 - INFO - Extracted Python code successfully.
+2025-03-31 00:19:39,955 - INFO - Chat history updated.
+2025-03-31 00:19:39,958 - INFO - Code written to generated_script.py.
+2025-03-31 00:19:40,363 - ERROR - Execution Error: /Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py:11: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  count_30_to_40_diabetic = range_30_to_40[df['Outcome'] == 1].shape[0]
+/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py:12: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  count_20_to_30_diabetic = range_20_to_30[df['Outcome'] == 1].shape[0]
+
+2025-03-31 12:18:50,133 - INFO - CSV file uploaded successfully.
+2025-03-31 12:18:55,144 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:00,626 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:00,691 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:00,692 - INFO - User Prompt: Generate python code for How many rows are there?
+2025-03-31 12:19:00,695 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:19:07,804 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:19:07,808 - INFO - Code generated successfully.
+2025-03-31 12:19:07,809 - INFO - Extracted Python code successfully.
+2025-03-31 12:19:07,809 - INFO - Chat history updated.
+2025-03-31 12:19:07,819 - INFO - Code written to generated_script.py.
+2025-03-31 12:19:16,258 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:16,329 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:16,329 - INFO - User Prompt: Generate python code for How many fields are there?
+2025-03-31 12:19:16,333 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:19:18,899 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:19:18,900 - INFO - Code generated successfully.
+2025-03-31 12:19:18,901 - WARNING - No code block found in response.
+2025-03-31 12:19:18,901 - INFO - Chat history updated.
+2025-03-31 12:19:18,904 - INFO - Code written to generated_script.py.
+2025-03-31 12:19:18,953 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 12
+    The number of fields in the dataset is: 9
+        ^^^^^^
+SyntaxError: invalid syntax
+
+2025-03-31 12:19:33,101 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:36,738 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:40,717 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:40,812 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:41,991 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:42,682 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:43,616 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:45,926 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:46,508 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:47,405 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:47,406 - INFO - User Prompt: Generate python code for How many fields are there?
+2025-03-31 12:19:47,412 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:19:51,482 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:19:51,483 - INFO - Code generated successfully.
+2025-03-31 12:19:51,483 - INFO - Extracted Python code successfully.
+2025-03-31 12:19:51,483 - INFO - Chat history updated.
+2025-03-31 12:19:51,485 - INFO - Code written to generated_script.py.
+2025-03-31 12:19:56,718 - INFO - CSV file uploaded successfully.
+2025-03-31 12:19:58,465 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:01,167 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:01,168 - INFO - User Prompt: Generate python code for How many fields are there?
+2025-03-31 12:20:01,173 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:20:05,785 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:20:05,786 - INFO - Code generated successfully.
+2025-03-31 12:20:05,786 - INFO - Extracted Python code successfully.
+2025-03-31 12:20:05,786 - INFO - Chat history updated.
+2025-03-31 12:20:05,789 - INFO - Code written to generated_script.py.
+2025-03-31 12:20:09,844 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:10,984 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:11,957 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:34,809 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:34,873 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:34,873 - INFO - User Prompt: How many rows are there?
+2025-03-31 12:20:34,879 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:20:39,510 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:20:39,511 - INFO - Code generated successfully.
+2025-03-31 12:20:39,511 - INFO - Extracted Python code successfully.
+2025-03-31 12:20:39,511 - INFO - Chat history updated.
+2025-03-31 12:20:39,513 - INFO - Code written to generated_script.py.
+2025-03-31 12:20:39,555 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 12
+    The number of rows (records) is: 768
+        ^^^^^^
+SyntaxError: invalid syntax
+
+2025-03-31 12:20:44,194 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:44,195 - INFO - User Prompt: How many rows are there?
+2025-03-31 12:20:44,203 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:20:48,243 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:20:48,244 - INFO - Code generated successfully.
+2025-03-31 12:20:48,244 - INFO - Extracted Python code successfully.
+2025-03-31 12:20:48,245 - INFO - Chat history updated.
+2025-03-31 12:20:48,247 - INFO - Code written to generated_script.py.
+2025-03-31 12:20:52,290 - INFO - CSV file uploaded successfully.
+2025-03-31 12:20:53,796 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:10,020 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:10,103 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:10,104 - INFO - User Prompt: How many people are diabetic in the age bracket of 30 to 40
+2025-03-31 12:21:10,106 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:21:13,036 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:14,053 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:14,158 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:21:14,159 - INFO - Code generated successfully.
+2025-03-31 12:21:14,159 - WARNING - No code block found in response.
+2025-03-31 12:21:16,643 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:16,644 - INFO - User Prompt: How many people are diabetic in the age bracket of 30 to 40
+2025-03-31 12:21:16,649 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:21:22,327 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:21:22,329 - INFO - Code generated successfully.
+2025-03-31 12:21:22,329 - INFO - Extracted Python code successfully.
+2025-03-31 12:21:22,329 - INFO - Chat history updated.
+2025-03-31 12:21:22,332 - INFO - Code written to generated_script.py.
+2025-03-31 12:21:26,142 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:28,139 - INFO - CSV file uploaded successfully.
+2025-03-31 12:21:29,547 - INFO - CSV file uploaded successfully.
+2025-03-31 12:48:21,310 - INFO - CSV file uploaded successfully.
+2025-03-31 12:48:39,086 - INFO - CSV file uploaded successfully.
+2025-03-31 12:48:39,159 - INFO - CSV file uploaded successfully.
+2025-03-31 12:48:39,159 - INFO - User Prompt: What are the different fields in the dataset?
+2025-03-31 12:48:39,170 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:48:47,817 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:48:47,819 - INFO - Code generated successfully.
+2025-03-31 12:48:47,819 - WARNING - No code block found in response.
+2025-03-31 12:48:47,819 - INFO - Chat history updated.
+2025-03-31 12:48:47,822 - INFO - Code written to generated_script.py.
+2025-03-31 12:48:47,886 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 1
+    The dataset contains the following fields:
+        ^^^^^^^
+SyntaxError: invalid syntax
+
+2025-03-31 12:48:58,049 - INFO - CSV file uploaded successfully.
+2025-03-31 12:48:58,049 - INFO - User Prompt: What are the different fields in the dataset?
+2025-03-31 12:48:58,051 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:49:02,532 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:49:02,533 - INFO - Code generated successfully.
+2025-03-31 12:49:02,533 - WARNING - No code block found in response.
+2025-03-31 12:49:02,533 - INFO - Chat history updated.
+2025-03-31 12:49:02,536 - INFO - Code written to generated_script.py.
+2025-03-31 12:49:02,585 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 1
+    Based on the information provided, the dataset contains the following fields:
+          ^^
+SyntaxError: invalid syntax
+
+2025-03-31 12:49:08,039 - INFO - CSV file uploaded successfully.
+2025-03-31 12:49:08,039 - INFO - User Prompt: What are the different fields in the dataset?
+2025-03-31 12:49:08,045 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:49:12,391 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:49:12,392 - INFO - Code generated successfully.
+2025-03-31 12:49:12,392 - WARNING - No code block found in response.
+2025-03-31 12:49:12,392 - INFO - Chat history updated.
+2025-03-31 12:49:12,394 - INFO - Code written to generated_script.py.
+2025-03-31 12:49:12,441 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 1
+    The dataset contains the following fields:
+        ^^^^^^^
+SyntaxError: invalid syntax
+
+2025-03-31 12:51:45,507 - INFO - CSV file uploaded successfully.
+2025-03-31 12:51:57,189 - INFO - CSV file uploaded successfully.
+2025-03-31 12:51:57,272 - INFO - CSV file uploaded successfully.
+2025-03-31 12:51:57,272 - INFO - User Prompt: How many fields are there in this dataset?
+2025-03-31 12:51:57,276 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:52:00,828 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:52:00,830 - INFO - Code generated successfully.
+2025-03-31 12:52:00,830 - INFO - Extracted Python code successfully.
+2025-03-31 12:52:00,830 - INFO - Chat history updated.
+2025-03-31 12:52:00,832 - INFO - Code written to generated_script.py.
+2025-03-31 12:52:17,120 - INFO - CSV file uploaded successfully.
+2025-03-31 12:52:18,756 - INFO - CSV file uploaded successfully.
+2025-03-31 12:52:18,757 - INFO - User Prompt: Can you name all the fields?
+2025-03-31 12:52:18,759 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:52:22,392 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:52:22,393 - INFO - Code generated successfully.
+2025-03-31 12:52:22,393 - INFO - Extracted Python code successfully.
+2025-03-31 12:52:22,393 - INFO - Chat history updated.
+2025-03-31 12:52:22,395 - INFO - Code written to generated_script.py.
+2025-03-31 12:53:06,287 - INFO - CSV file uploaded successfully.
+2025-03-31 12:53:13,195 - INFO - CSV file uploaded successfully.
+2025-03-31 12:53:13,195 - INFO - User Prompt: Which age bracket of 10 years has highest percentage of diabetic people?
+2025-03-31 12:53:13,198 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:53:20,345 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:53:20,347 - INFO - Code generated successfully.
+2025-03-31 12:53:20,347 - INFO - Extracted Python code successfully.
+2025-03-31 12:53:20,347 - INFO - Chat history updated.
+2025-03-31 12:53:20,350 - INFO - Code written to generated_script.py.
+2025-03-31 12:54:22,962 - INFO - CSV file uploaded successfully.
+2025-03-31 12:54:23,973 - INFO - CSV file uploaded successfully.
+2025-03-31 12:54:23,973 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese?
+2025-03-31 12:54:23,975 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:54:36,944 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:54:36,946 - INFO - Code generated successfully.
+2025-03-31 12:54:36,947 - WARNING - No code block found in response.
+2025-03-31 12:54:36,947 - INFO - Chat history updated.
+2025-03-31 12:54:36,950 - INFO - Code written to generated_script.py.
+2025-03-31 12:54:37,010 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 28
+    This code will categorize the ages into ranges (0-10, 11-20, etc.) and calculate the percentage of diabetic people in each range. It then identifies the age range with the highest percentage.
+         ^^^^
+SyntaxError: invalid syntax
+
+2025-03-31 12:54:55,166 - INFO - CSV file uploaded successfully.
+2025-03-31 12:54:55,167 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese?
+2025-03-31 12:54:55,170 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:55:07,926 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:55:07,928 - INFO - Code generated successfully.
+2025-03-31 12:55:07,928 - INFO - Extracted Python code successfully.
+2025-03-31 12:55:07,928 - INFO - Chat history updated.
+2025-03-31 12:55:07,931 - INFO - Code written to generated_script.py.
+2025-03-31 12:55:08,463 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in <module>
+    percentage = len(filtered_df[filtered_df['Outcome'] == 1]) / len(filtered_df) * 100
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+ZeroDivisionError: division by zero
+
+2025-03-31 12:57:21,854 - INFO - CSV file uploaded successfully.
+2025-03-31 12:57:45,632 - INFO - CSV file uploaded successfully.
+2025-03-31 12:57:49,487 - INFO - CSV file uploaded successfully.
+2025-03-31 12:57:49,613 - INFO - CSV file uploaded successfully.
+2025-03-31 12:57:49,613 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese? 
+
+ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 18, in <module>
+    percentage = len(filtered_df[filtered_df['Outcome'] == 1]) / len(filtered_df) * 100
+2025-03-31 12:57:49,616 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:58:05,970 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:58:05,973 - INFO - Code generated successfully.
+2025-03-31 12:58:05,973 - INFO - Extracted Python code successfully.
+2025-03-31 12:58:05,978 - INFO - Chat history updated.
+2025-03-31 12:58:05,988 - INFO - Code written to generated_script.py.
+2025-03-31 12:59:24,665 - INFO - CSV file uploaded successfully.
+2025-03-31 12:59:24,767 - INFO - CSV file uploaded successfully.
+2025-03-31 12:59:24,767 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese? Can you also plot it as a bargraph?
+2025-03-31 12:59:24,774 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 12:59:46,160 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 12:59:46,160 - INFO - Code generated successfully.
+2025-03-31 12:59:46,160 - WARNING - No code block found in response.
+2025-03-31 12:59:46,160 - INFO - Chat history updated.
+2025-03-31 12:59:46,163 - INFO - Code written to generated_script.py.
+2025-03-31 12:59:46,229 - ERROR - Execution Error:   File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 35
+    ```
+    ^
+SyntaxError: invalid syntax
+
+2025-03-31 12:59:55,974 - INFO - CSV file uploaded successfully.
+2025-03-31 12:59:55,974 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese? Can you also plot it as a bargraph?
+2025-03-31 12:59:55,981 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 13:00:17,320 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 13:00:17,322 - INFO - Code generated successfully.
+2025-03-31 13:00:17,322 - INFO - Extracted Python code successfully.
+2025-03-31 13:00:17,322 - INFO - Chat history updated.
+2025-03-31 13:00:17,324 - INFO - Code written to generated_script.py.
+2025-03-31 13:00:18,081 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 29, in <module>
+    plt.bar(age_ranges, list(age_range_percentages.values()), color='skyblue')
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/pyplot.py", line 2981, in bar
+    return gca().bar(
+           ^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 2572, in bar
+    x, height, width, y, linewidth, hatch = np.broadcast_arrays(
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 540, in broadcast_arrays
+    shape = _broadcast_shape(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 422, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (7,).
+
+2025-03-31 13:01:09,177 - INFO - CSV file uploaded successfully.
+2025-03-31 13:01:10,579 - INFO - CSV file uploaded successfully.
+2025-03-31 13:01:10,580 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese? Can you also plot it as a bargraph?
+
+ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 29, in <module>
+    plt.bar(age_ranges, list(age_range_percentages.values()), color='skyblue')
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/pyplot.py", line 2981, in bar
+    return gca().bar(
+           ^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 2572, in bar
+    x, height, width, y, linewidth, hatch = np.broadcast_arrays(
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 540, in broadcast_arrays
+    shape = _broadcast_shape(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 422, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (7,).
+2025-03-31 13:01:10,592 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 13:01:36,295 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 13:01:36,299 - INFO - Code generated successfully.
+2025-03-31 13:01:36,299 - INFO - Extracted Python code successfully.
+2025-03-31 13:01:36,299 - INFO - Chat history updated.
+2025-03-31 13:01:36,303 - INFO - Code written to generated_script.py.
+2025-03-31 13:01:37,168 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 29, in <module>
+    plt.bar(age_ranges, list(age_range_percentages.values()), color='skyblue')
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/pyplot.py", line 2981, in bar
+    return gca().bar(
+           ^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 2572, in bar
+    x, height, width, y, linewidth, hatch = np.broadcast_arrays(
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 540, in broadcast_arrays
+    shape = _broadcast_shape(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 422, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (7,).
+
+2025-03-31 13:03:13,201 - INFO - CSV file uploaded successfully.
+2025-03-31 13:03:13,335 - INFO - CSV file uploaded successfully.
+2025-03-31 13:03:13,335 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest percentage of diabetese? Can you also plot the percentage of diabetic people in each range?
+
+2025-03-31 13:03:13,338 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 13:03:33,922 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 13:03:33,923 - INFO - Code generated successfully.
+2025-03-31 13:03:33,924 - INFO - Extracted Python code successfully.
+2025-03-31 13:03:33,924 - INFO - Chat history updated.
+2025-03-31 13:03:33,926 - INFO - Code written to generated_script.py.
+2025-03-31 13:03:34,536 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 28, in <module>
+    plt.bar(age_ranges, list(age_range_percentages.values()), color='skyblue')
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/pyplot.py", line 2981, in bar
+    return gca().bar(
+           ^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 2572, in bar
+    x, height, width, y, linewidth, hatch = np.broadcast_arrays(
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 540, in broadcast_arrays
+    shape = _broadcast_shape(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 422, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (7,).
+
+2025-03-31 13:07:22,199 - INFO - CSV file uploaded successfully.
+2025-03-31 13:07:30,990 - INFO - CSV file uploaded successfully.
+2025-03-31 13:07:31,086 - INFO - CSV file uploaded successfully.
+2025-03-31 13:07:31,863 - INFO - CSV file uploaded successfully.
+2025-03-31 13:07:55,722 - INFO - CSV file uploaded successfully.
+2025-03-31 13:07:55,848 - INFO - CSV file uploaded successfully.
+2025-03-31 13:07:55,848 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest DiabetesPedigreeFunction?
+
+2025-03-31 13:07:55,856 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 13:08:13,479 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 13:08:13,480 - INFO - Code generated successfully.
+2025-03-31 13:08:13,480 - INFO - Extracted Python code successfully.
+2025-03-31 13:08:13,481 - INFO - Chat history updated.
+2025-03-31 13:08:13,483 - INFO - Code written to generated_script.py.
+2025-03-31 13:09:17,796 - INFO - CSV file uploaded successfully.
+2025-03-31 13:09:17,894 - INFO - CSV file uploaded successfully.
+2025-03-31 13:09:17,895 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest DiabetesPedigreeFunction? Show it for all the ranges?
+
+2025-03-31 13:09:17,898 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 13:09:33,996 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 13:09:33,999 - INFO - Code generated successfully.
+2025-03-31 13:09:33,999 - INFO - Extracted Python code successfully.
+2025-03-31 13:09:34,000 - INFO - Chat history updated.
+2025-03-31 13:09:34,004 - INFO - Code written to generated_script.py.
+2025-03-31 13:10:31,299 - INFO - CSV file uploaded successfully.
+2025-03-31 13:10:32,415 - INFO - CSV file uploaded successfully.
+2025-03-31 13:10:32,415 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has highest BMI? Show it for all the ranges?
+
+2025-03-31 13:10:32,418 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 13:10:48,127 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 13:10:48,129 - INFO - Code generated successfully.
+2025-03-31 13:10:48,129 - INFO - Extracted Python code successfully.
+2025-03-31 13:10:48,130 - INFO - Chat history updated.
+2025-03-31 13:10:48,134 - INFO - Code written to generated_script.py.
+2025-03-31 17:29:01,544 - INFO - CSV file uploaded successfully.
+2025-03-31 17:29:19,459 - INFO - CSV file uploaded successfully.
+2025-03-31 17:29:19,532 - INFO - CSV file uploaded successfully.
+2025-03-31 17:29:19,533 - INFO - User Prompt: How many rows are there in this dataset
+
+2025-03-31 17:29:19,540 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 17:29:26,452 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 17:29:26,453 - INFO - Code generated successfully.
+2025-03-31 17:29:26,453 - INFO - Extracted Python code successfully.
+2025-03-31 17:29:26,454 - INFO - Chat history updated.
+2025-03-31 17:29:26,456 - INFO - Code written to generated_script.py.
+2025-03-31 17:33:46,852 - INFO - CSV file uploaded successfully.
+2025-03-31 17:33:49,545 - INFO - CSV file uploaded successfully.
+2025-03-31 17:33:49,546 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20 etc) has maximum percentage of diabetic people?
+
+2025-03-31 17:33:49,549 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 17:34:01,927 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 17:34:01,929 - INFO - Code generated successfully.
+2025-03-31 17:34:01,930 - INFO - Extracted Python code successfully.
+2025-03-31 17:34:01,930 - INFO - Chat history updated.
+2025-03-31 17:34:01,932 - INFO - Code written to generated_script.py.
+2025-03-31 17:34:19,168 - INFO - CSV file uploaded successfully.
+2025-03-31 17:34:19,169 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20 etc) has maximum percentage of diabetic people?
+
+2025-03-31 17:34:19,172 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 17:34:32,381 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 17:34:32,382 - INFO - Code generated successfully.
+2025-03-31 17:34:32,382 - INFO - Extracted Python code successfully.
+2025-03-31 17:34:32,382 - INFO - Chat history updated.
+2025-03-31 17:34:32,384 - INFO - Code written to generated_script.py.
+2025-03-31 17:34:32,825 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 32, in <module>
+    percentage = age_range_percentages.loc[(age_range[0], 1)]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexing.py", line 1066, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/frame.py", line 3924, in _get_value
+    row = self.index.get_loc(index)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+
+2025-03-31 17:35:23,034 - INFO - CSV file uploaded successfully.
+2025-03-31 17:35:24,171 - INFO - CSV file uploaded successfully.
+2025-03-31 17:35:24,172 - INFO - User Prompt: Which age range of 10 years (e.g. 0 to 10, 10 to 20, 20 to 30 etc) has maximum percentage of people diabetese?
+
+2025-03-31 17:35:24,175 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 17:35:39,476 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 17:35:39,478 - INFO - Code generated successfully.
+2025-03-31 17:35:39,478 - INFO - Extracted Python code successfully.
+2025-03-31 17:35:39,478 - INFO - Chat history updated.
+2025-03-31 17:35:39,480 - INFO - Code written to generated_script.py.
+2025-03-31 17:35:39,973 - ERROR - Execution Error: Traceback (most recent call last):
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/yuvraj/Desktop/KDaaS-Prototype/generated_script.py", line 32, in <module>
+    percentage = age_range_percentages.loc[(age_range[0], 1)]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexing.py", line 1066, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/frame.py", line 3924, in _get_value
+    row = self.index.get_loc(index)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuvraj/miniconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+
+2025-03-31 17:35:51,666 - INFO - CSV file uploaded successfully.
+2025-03-31 17:36:26,593 - INFO - CSV file uploaded successfully.
+2025-03-31 17:36:26,685 - INFO - CSV file uploaded successfully.
+2025-03-31 17:36:26,686 - INFO - User Prompt: Which age range (e.g. 0 to 10, 10 to 20 etc) has maximum number of diabetic people. Also share stats of all the other ranges
+2025-03-31 17:36:26,688 - INFO - Dataset info retrieved: {'columns': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome'], 'num_rows': 768, 'num_columns': 9, 'sample_data': {'Pregnancies': {0: 6, 1: 1, 2: 8}, 'Glucose': {0: 148, 1: 85, 2: 183}, 'BloodPressure': {0: 72, 1: 66, 2: 64}, 'SkinThickness': {0: 35, 1: 29, 2: 0}, 'Insulin': {0: 0, 1: 0, 2: 0}, 'BMI': {0: 33.6, 1: 26.6, 2: 23.3}, 'DiabetesPedigreeFunction': {0: 0.627, 1: 0.351, 2: 0.672}, 'Age': {0: 50, 1: 31, 2: 32}, 'Outcome': {0: 1, 1: 0, 2: 1}}}
+2025-03-31 17:36:48,030 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-31 17:36:48,032 - INFO - Code generated successfully.
+2025-03-31 17:36:48,032 - INFO - Extracted Python code successfully.
+2025-03-31 17:36:48,032 - INFO - Chat history updated.
+2025-03-31 17:36:48,034 - INFO - Code written to generated_script.py.
